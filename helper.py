@@ -1,4 +1,4 @@
-from pytube import YouTube
+from pytube import YouTube,Playlist
 import requests
 
 
@@ -11,10 +11,6 @@ class Download():
     
 
 
-    def video():
-
-
-        pass
 
     def tumnail_title(url):
 
@@ -28,20 +24,40 @@ class Download():
 
     def menu(url):
         link=YouTube(str(url))
-        data=link.streams.get_highest_resolution()
+        data=link.streams.get_highest_resolution().download()
         
-        return data
+        yield data
 
         
         
-    # def download_video():
+class Bulk():
+    
+    def video_title(url):
+
+        link=Playlist(str(url))
+        for i in link.videos:
+            fist=i.thumbnail_url
+            break
+        
         
 
- 
-    #    link=YouTube(str(url))
-    #    data=link.streams.get_highest_resolution()
-       
-    #    return data.download()
+
+        return link.title, fist,len(link.video_urls)
+
+    
+    
+
+
+
+
+    def video_list(url):
+        link=Playlist(url)
+        for i in link.videos_generator():
+            video=i.streams.get_highest_resolution().download()
+            
+        return video
+
+
 
    
 
