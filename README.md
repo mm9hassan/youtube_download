@@ -10,3 +10,7 @@ For 1 Videos
 For Playlist
 
 ![Screenshot (13)](https://user-images.githubusercontent.com/99476440/210182623-8f56db3b-c22d-441e-b06e-8379c8eb09bb.png)
+
+![Screenshot (15)](https://user-images.githubusercontent.com/99476440/210418362-0379f169-8539-4db7-9d54-5f66fdc70541.png)
+
+![Screenshot (16)](https://user-images.githubusercontent.com/99476440/210418369-d86ce209-7750-4dcf-9e66-dde82fc02f3b.png)
